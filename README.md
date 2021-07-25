@@ -11,7 +11,7 @@ Contents
 
 **Functions:** **[`Functions`](#functions)__,__[`Lambda`](#lambda)__,__[`Comprehensions`](#comprehensions)__,__[`Map,Filter,Reduce`](#map-filter-reduce)__,__[`Ternary`](#ternary-condition)__,__[`Any,All`](#any-all)__,__[`Closures`](#closures)__,__[`Scope`](#scope)**    
 
-**Advanced Python:** **[`Modules`](#modules)__,__[`Iterators`](#iterators)__,__[`Generators`](#generators)__,__[`Decorators`](#decorators)__,__[`Class`](#class)__,__[`Exceptions`](#exceptions)__,__[`Command Line Arguments`](#command-line-arguments)__,__[`File IO`](#file-io)__,__[`Useful Libraries`](#useful-libraries)**  
+**Advanced Python:** **[`Modules`](#modules)__,__[`Wairus Operator`](#WairusOperator)__,__[`Iterators`](#iterators)__,__[`Generators`](#generators)__,__[`Decorators`](#decorators)__,__[`Class`](#class)__,__[`Exceptions`](#exceptions)__,__[`Command Line Arguments`](#command-line-arguments)__,__[`File IO`](#file-io)__,__[`Useful Libraries`](#useful-libraries)**  
 
 
 Numbers
@@ -654,6 +654,12 @@ def get_multiplier(a):
 ### Scope
 **If variable is being assigned to anywhere in the scope, it is regarded as a local variable, unless it is declared as a 'global' or a 'nonlocal'.**
 
+**The priority to the scope is always:**
+**1 - start with local**
+**2 - Parent local?**
+**3 - Global**
+**4 - built in python functions**
+
 ```python
 def get_counter():
     i = 0
@@ -685,6 +691,15 @@ from <module_name> import <function_name> as m_function
 from <module_name> import *
 ```
 
+WairusOperator
+-------
+**Create a variable in time of a condition**
+```python
+a = 'helloooooooo'
+
+if ((n := len(a)) > 10):
+  print(f"too long {n} elements")
+```
 
 Iterators
 --------
