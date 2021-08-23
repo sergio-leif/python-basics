@@ -18,6 +18,7 @@ def only_odd(item):
 
 # print(list(filter(only_odd, my_list)))
 
+# Reduce
 def accumulator(acc, item):
     print(acc, item)
     return acc + item
