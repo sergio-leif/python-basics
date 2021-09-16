@@ -3,7 +3,7 @@ from translate import Translator
 translator= Translator(to_lang="es") # zh: chinese
 
 try:
-    with open('./file_to_translate.txt', mode='r') as my_file:
+    with open('./files/file_to_translate.txt', mode='r') as my_file:
         text = my_file.readlines()
         for line in text:
             print(translator.translate(line))

@@ -10,7 +10,7 @@
 
 # Correct way to do it:
 try:
-    with open('./test.txt', mode='a') as my_file: #r: read, a: append, w: write, r+: read & write
+    with open('./files/test.txt', mode='a') as my_file: #r: read, a: append, w: write, r+: read & write
         text = my_file.write('Hey it\'s me!')
         # print(my_file.readlines())
         print(text)
