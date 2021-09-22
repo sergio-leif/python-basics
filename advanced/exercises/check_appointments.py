@@ -21,7 +21,7 @@ url = sys.argv[3]
 available = False
 
 while available == False:
-    time.sleep(30)
+    time.sleep(15)
     request = urllib.request.Request(url)
 
     r = urllib.request.urlopen(request).read()
@@ -48,25 +48,4 @@ while available == False:
                 break
         if index == len(lista)-1:
             print('There are not available appointments yet')
-            
-    # print(lista)
-    # available = True
-    # for line in little:
-    #     if 'Appointments Available' in line:
-    #         if '0 Appointments Available' in line:
-    #             print('There is not available appointments')
-    #             # message = client.messages \
-    #             #     .create(
-    #             #          body="Sorry, no appointments yet " + url,
-    #             #          from_=source_phone,
-    #             #          to=to_phone
-    #             #      )
-    #         else:
-    #             print('Run and take one appointment!')
-    #             message = client.messages \
-    #                 .create(
-    #                     body="Run and take one appointment! " + url,
-    #                     from_=source_phone,
-    #                     to=to_phone
-    #                 )
-    #             available = True
+
