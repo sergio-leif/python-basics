@@ -1,3 +1,5 @@
+# More examples in: https://www.earthdatascience.org/courses/intro-to-earth-data-science/write-efficient-python-code/loops/list-comprehensions
+
 # list, set, dictionary
 
 #my_list = [param for param in iterable]
